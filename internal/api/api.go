@@ -3,7 +3,7 @@ package api
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/lapeko/udemy__github-actions-the-complete-guide/section3-go-api/internal/api/router"
+	"github.com/lapeko/udemy__github-actions-the-complete-guide/internal/api/router"
 	"os"
 )
 

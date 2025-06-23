@@ -1,6 +1,8 @@
 package repo
 
-import "github.com/lapeko/udemy__github-actions-the-complete-guide/section3-go-api/internal/model"
+import (
+	"github.com/lapeko/udemy__github-actions-the-complete-guide/internal/model"
+)
 
 type repoInstance struct{}
 

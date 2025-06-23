@@ -1,4 +1,4 @@
-module github.com/lapeko/udemy__github-actions-the-complete-guide/section3-go-api
+module github.com/lapeko/udemy__github-actions-the-complete-guide
 
 go 1.24.0
 

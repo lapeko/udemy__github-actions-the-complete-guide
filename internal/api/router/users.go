@@ -2,7 +2,7 @@ package router
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/lapeko/udemy__github-actions-the-complete-guide/section3-go-api/internal/api/controller"
+	"github.com/lapeko/udemy__github-actions-the-complete-guide/internal/api/controller"
 )
 
 func SetupUsers(r *gin.RouterGroup) {
