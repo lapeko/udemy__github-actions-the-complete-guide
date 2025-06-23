@@ -2,14 +2,14 @@ package api
 
 import (
 	"fmt"
-	"os"
-
 	"github.com/gin-gonic/gin"
+	"github.com/lapeko/udemy__github-actions-the-complete-guide/section3-go-api/internal/api/router"
+	"os"
 )
 
 type Api interface {
 	Init()
-	Start()
+	Start() error
 }
 
 type apiInstance struct {
@@ -27,8 +27,9 @@ func (a *apiInstance) Init() {
 		a.port = "8000"
 	}
 	a.engine = gin.Default()
+	router.ApplyRoutes(a.engine)
 }
 
-func (a *apiInstance) Start() {
-	a.engine.Run(fmt.Sprintf(":%s", a.port))
+func (a *apiInstance) Start() error {
+	return a.engine.Run(fmt.Sprintf(":%s", a.port))
 }

@@ -1,4 +1,5 @@
 # TODOS
+- implement user controllers
 - add postgres
 - add sqlc
 - crypt password
