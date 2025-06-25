@@ -28,7 +28,7 @@ func TestPostUserController(t *testing.T) {
 			payload:       mockUser{},
 			statusCode:    http.StatusBadRequest,
 			responseData:  nil,
-			responseError: "Key: 'mockUser.Email' Error:Field validation for 'Email' failed on the 'required' tag",
+			responseError: "Wrong error message",
 		},
 		{
 			name:          "Should success when request body correct",
